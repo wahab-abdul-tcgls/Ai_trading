@@ -95,7 +95,7 @@ async def websocket_endpoint(websocket: WebSocket):
     connected_clients.add(websocket)
     try:
         while True:
-            await websocket.receive_text()  # Just keep the connection alive
+            await websocket.receive_text()  
     except Exception as e:
         print("WebSocket disconnected:", e)
     finally:

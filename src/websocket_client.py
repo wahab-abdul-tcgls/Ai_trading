@@ -6,7 +6,7 @@ import websockets
 import requests
 from google.protobuf.json_format import MessageToDict
 
-from generated import MarketDataFeedV3_pb2 as pb
+from backend.generated import MarketDataFeedV3_pb2 as pb
 from dotenv import load_dotenv
 import os
 
